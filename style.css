@@ -1,0 +1,114 @@
+body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #d8e0ec;
+    }
+
+header {
+    background: linear-gradient(to right, rgb(36, 59, 85), rgb(20, 30, 48));
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    color: white;
+    }
+
+nav {
+    text-align: center;
+    padding: 10px;
+    }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 12px;
+    margin: 0 4px;
+    }
+
+nav a:hover {
+    background: linear-gradient(
+    to right,
+    rgb(180, 195, 210),
+    rgb(160, 180, 200)
+    );
+    color: rgb(20, 23, 26);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    }
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    }
+
+main > section:first-of-type {
+    background: rgb(231, 236, 242);
+    padding: 20px;
+    border-radius: 12px;
+    }
+
+article {
+    background: rgb(219, 219, 234);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+main > section:last-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    }
+
+main > section:last-of-type > section {
+    flex: 3;
+    background: rgb(232, 236, 242);
+    padding: 20px;
+    border-radius: 12px;
+    }
+
+aside {
+    flex: 1;
+    background: linear-gradient(
+    to right,
+    rgb(230, 235, 240),
+    rgb(210, 220, 230)
+    );
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+aside p {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+footer {
+    padding: 12px;
+    background: linear-gradient(
+    to right,
+    rgb(245, 247, 250),
+    rgb(220, 227, 234)
+    );
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    font-size: 14px;
+    margin-top: 20px;
+    }
+
+@media (max-width: 768px)
+    {
+    nav a {
+    padding: 6px 6px;
+    }
+    main > section:last-of-type {
+        flex-direction: column;
+            }
+        }
